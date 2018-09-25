@@ -1,0 +1,13 @@
+!EnvironmentInfo
+apk: D:/PycharmProjects/appium_auto/apk/tmall.apk
+app_activity: com.tmall.wireless.splash.TMSplashActivity
+app_package: com.tmall.wireless
+appium: 1.9.0
+devices:
+- !DeviceInfo
+  device_name: b7556c74
+  platform_name: Android
+  platform_version: 8.0.0
+html_report: D:/PycharmProjects/appium_auto/report/html
+pages_yaml: D:/PycharmProjects/appium_auto/pages/yaml
+xml_report: D:/PycharmProjects/appium_auto/report/xml
