@@ -1,8 +1,5 @@
-from utils.action import ElementActions
-from appium.webdriver.common.mobileby import By
+from utils.basepage import BasePage
 
 
-class HomePage(ElementActions):
-    login_text = (By.ID, 'com.czbix.v2ex:id/username_tv')
-    account = (By.ID, 'com.czbix.v2ex:id/account')
-    password = (By.ID, 'com.czbix.v2ex:id/password')
+class HomePage(BasePage):
+    login_icon = [(86, 107), (115, 115)]

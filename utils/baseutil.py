@@ -6,10 +6,10 @@ import yaml
 
 class BaseUtil:
     def __init__(self):
-        self.root_path = 'D:/PycharmProjects/appium_auto'
+        self.root_path = 'E:/PycharmProjects/appium_auto'
 
     def get_config_value(self, section, key):
-        config_path = self.root_path + "/conf/config.ini"
+        config_path = self.root_path + "/config/config.ini"
         config = configparser.ConfigParser()
         config.read(config_path)
         value = config.get(section, key)

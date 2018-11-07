@@ -1,28 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import sys
 import pytest
-from utils.environment import Environment
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+from utils.baseutil import BaseUtil
 from utils.shell import Shell
-from utils.log import Log
+from utils.logger import Logger
 
-"""
-run all case:
-    python3 run.py
-
-run one module case:
-    python3 run.py test/test_home.py
-
-run case with key word:
-    python3 run.py -k <keyword>
-
-"""
+logger = Logger(logger="run").get_log()
 
 if __name__ == '__main__':
-    env = Environment()
-    xml_report_path = env.get_environment_info().xml_report
-    html_report_path = env.get_environment_info().html_report
+    xml_report_path = BaseUtil().get_yaml_value("EnvironmentInfo", "xml_report")
+    html_report_path = BaseUtil().get_yaml_value("EnvironmentInfo", "html_report")
     # 开始测试
     args = ['-s', '-q', '--alluredir', xml_report_path]
     self_args = sys.argv[1:]
@@ -31,6 +25,6 @@ if __name__ == '__main__':
     cmd = 'allure generate %s -o %s' % (xml_report_path, html_report_path)
     try:
         Shell.invoke(cmd)
-        Log.e("Html测试报告生成成功")
+        logger.info("Html测试报告生成成功")
     except Exception as e:
-        Log.e("Html测试报告生成失败,确保已经安装了Allure-Commandline % s" % e)
+        logger.error("Html测试报告生成失败,确保已经安装了Allure-Commandline % s" % e)

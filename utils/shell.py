@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 import os
 import subprocess
-import platform
 
 
 class Shell:
@@ -63,7 +62,7 @@ class ADB(object):
 
     def get_android_version(self):
         """
-        获取设备中的Android版本号，如4.2.2
+        获取设备中的Android版本号
         """
         return self.shell(
             "getprop ro.build.version.release").strip()

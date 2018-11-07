@@ -1,6 +1,39 @@
+import pytest
+from utils.basedriver import BaseDriver
+from utils.logger import Logger
 from pages.homepage import HomePage
+from pages.loginpage import LoginPage
+
+logger = Logger(logger="TestLogin").get_log()
 
 
-class TestHomePage:
-    homepage = HomePage()
-    homepage.click(homepage.login_text)
+class TestLogin:
+
+    @classmethod
+    def setup_class(cls):
+        base_driver = BaseDriver()
+        cls.driver = base_driver.app_driver()
+
+    @classmethod
+    def teardown_class(cls):
+        cls.driver.close_app()
+
+    def setup_method(self):
+        pass
+
+    def teardown_method(self):
+        pass
+
+    def test_login(self):
+        homepage = HomePage(self.driver)
+        homepage.tap(homepage.login_icon)
+        login_page = LoginPage(self.driver)
+        login_page.click(login_page.login_image)
+        login_page.tap(login_page.login_immediately)
+
+    def test_login2(self):
+        pass
+
+
+if __name__ == '__main__':
+    pytest.main(["-s", "test_login.py"])

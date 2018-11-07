@@ -6,23 +6,11 @@ import allure
 from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import *
-from utils.log import Logger
+from utils.logger import Logger
 
 logger = Logger(logger='BasePage').get_log()
 
 
-def singleton(class_):
-    instances = {}
-
-    def getinstance(*args, **kwargs):
-        if class_ not in instances:
-            instances[class_] = class_(*args, **kwargs)
-        return instances[class_]
-
-    return getinstance
-
-
-@singleton
 class BasePage(object):
     """
     ########################################
@@ -52,7 +40,7 @@ class BasePage(object):
     def reset(self):
         """
         ########################################
-        描述：因为是单例,所以当driver变动的时候,需要重置一下driver
+        描述：重置一下driver
         参数：driver: driver
         返回值：none
         异常描述：self
@@ -80,32 +68,32 @@ class BasePage(object):
             value = attr[1]
         try:
             if by == "id":
-                WebDriverWait(self.driver, self.timeout_time).until(
+                WebDriverWait(self.driver, self.timeout_time, 0.5).until(
                     lambda driver: driver.find_element_by_id(value).is_displayed())
                 self.driver.implicitly_wait(self.wait_time)
                 element = self.driver.find_element_by_id(value)
                 return element
             if by == "name":
                 find_name = "//*[@text='%s']" % value
-                WebDriverWait(self.driver, self.timeout_time).until(
+                WebDriverWait(self.driver, self.timeout_time, 0.5).until(
                     lambda driver: driver.find_element_by_xpath(find_name).is_displayed())
                 self.driver.implicitly_wait(self.wait_time)
                 element = self.driver.find_element_by_xpath(find_name)
                 return element
             if by == "xpath":
-                WebDriverWait(self.driver, self.timeout_time).until(
+                WebDriverWait(self.driver, self.timeout_time, 0.5).until(
                     lambda driver: driver.find_element_by_xpath(value).is_displayed())
                 self.driver.implicitly_wait(self.wait_time)
                 element = self.driver.find_element_by_xpath(value)
                 return element
             if by == "class":
-                WebDriverWait(self.driver, self.timeout_time).until(
+                WebDriverWait(self.driver, self.timeout_time, 0.5).until(
                     lambda driver: driver.find_element_by_class_name(value).is_displayed())
                 self.driver.implicitly_wait(self.wait_time)
                 element = self.driver.find_element_by_class_name(value)
                 return element
             if by == "content":
-                WebDriverWait(self.driver, self.timeout_time).until(
+                WebDriverWait(self.driver, self.timeout_time, 0.5).until(
                     lambda driver: driver.find_element_by_accessibility_id(value).is_displayed())
                 self.driver.implicitly_wait(self.wait_time)
                 element = self.driver.find_element_by_accessibility_id(value)
@@ -113,8 +101,10 @@ class BasePage(object):
             else:
                 raise NameError("Please Enter correct element value")
         except NoSuchElementException:
-            logger.info("Can not find element: %s" % type_and_value)
+            logger.warning('Can not find element: %s' % type_and_value)
             raise
+        except TimeoutException:
+            logger.warning('Can not find element: %s' % type_and_value)
 
     def find_elements(self, by, value):
         """
@@ -173,8 +163,10 @@ class BasePage(object):
         ########################################
         """
         logger.info("click element: %s" % locator)
-        element = self.find_element(locator)
-        element.click()
+        try:
+            self.find_element(locator).click()
+        except AttributeError as e:
+            logger.error("无法点击元素: %s" % e)
 
     def input_text(self, locator, text):
         """
@@ -200,6 +192,9 @@ class BasePage(object):
         """
         element = self.find_element(locator)
         element.clear()
+
+    def tap(self, positions, timeout=500):
+        self.driver.tap(positions, timeout)
 
     @staticmethod
     def sleep(sleep_time):

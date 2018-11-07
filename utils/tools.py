@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 
 from utils.shell import Shell
-from utils.log import Log
+from utils.logger import Logger
+
+logger = Logger(logger="tools").get_log()
 
 
 class Device:
@@ -18,4 +20,4 @@ class Device:
 
 if __name__ == '__main__':
     devices = Device.get_android_devices()
-    Log.i("devices: ", devices)
+    logger.info("devices: % s" % devices)
