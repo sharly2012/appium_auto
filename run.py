@@ -1,5 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
+# @author: sharly
 
 import os
 import sys
@@ -15,9 +16,10 @@ from utils.logger import Logger
 logger = Logger(logger="run").get_log()
 
 if __name__ == '__main__':
+    # 获取report的路径
     xml_report_path = BaseUtil().get_yaml_value("EnvironmentInfo", "xml_report")
     html_report_path = BaseUtil().get_yaml_value("EnvironmentInfo", "html_report")
-    # 开始测试
+    # 开始执行测试
     args = ['-s', '-q', '--alluredir', xml_report_path]
     self_args = sys.argv[1:]
     pytest.main(args + self_args)

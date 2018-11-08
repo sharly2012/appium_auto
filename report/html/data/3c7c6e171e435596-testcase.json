@@ -1,0 +1,62 @@
+{
+  "uid" : "3c7c6e171e435596",
+  "name" : "test_login.TestLogin.test_login",
+  "title" : "Test login",
+  "time" : {
+    "start" : 1541642204085,
+    "stop" : 1541642222336,
+    "duration" : 18251
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "BLOCKER",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "1c5725c9c93679c4",
+    "name" : "testcase",
+    "title" : "Testcase"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "28404b59-4be7-484c-8721-a2cf25438b8d-attachment.txt",
+    "type" : "text/plain",
+    "size" : 89,
+    "uid" : "debe53c67e01466e"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "login"
+  }, {
+    "name" : "thread",
+    "value" : "5268-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MQJGI8V"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "首页"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

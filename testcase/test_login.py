@@ -1,4 +1,9 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+# @author: sharly
+
 import pytest
+import allure
 from utils.basedriver import BaseDriver
 from utils.logger import Logger
 from pages.homepage import HomePage
@@ -7,6 +12,7 @@ from pages.loginpage import LoginPage
 logger = Logger(logger="TestLogin").get_log()
 
 
+@allure.feature("首页")
 class TestLogin:
 
     @classmethod
@@ -24,6 +30,8 @@ class TestLogin:
     def teardown_method(self):
         pass
 
+    @allure.severity('blocker')
+    @allure.story("login")
     def test_login(self):
         homepage = HomePage(self.driver)
         homepage.tap(homepage.login_icon)
@@ -31,7 +39,19 @@ class TestLogin:
         login_page.click(login_page.login_image)
         login_page.tap(login_page.login_immediately)
 
+    @allure.severity('normal')
+    @allure.story("test")
     def test_login2(self):
+        pass
+
+    @allure.severity('normal')
+    @allure.story("test")
+    def test_login3(self):
+        pass
+
+    @allure.severity('normal')
+    @allure.story("test")
+    def test_login4(self):
         pass
 
 

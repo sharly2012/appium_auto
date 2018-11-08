@@ -1,0 +1,56 @@
+{
+  "uid" : "81dc0d9bb6dd7649",
+  "name" : "test_login.TestLogin.test_login2",
+  "title" : "Test login 2",
+  "time" : {
+    "start" : 1541648842255,
+    "stop" : 1541648842260,
+    "duration" : 5
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "b0ff29d7f4e17fdd",
+    "name" : "testcase",
+    "title" : "Testcase"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "testcase"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MQJGI8V"
+  }, {
+    "name" : "story",
+    "value" : "test"
+  }, {
+    "name" : "feature",
+    "value" : "首页"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "15252-MainThread"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,1 @@
+basepage.py                165 INFO     click element: id>=com.elab.dmbrand:id/riv_avatar

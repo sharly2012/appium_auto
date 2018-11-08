@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+# @author: sharly
 
 
 from utils.logger import Logger
@@ -18,7 +19,7 @@ class Environment(object):
 
     def check_appium(self):
         logger.info('检查环境...')
-        # 检查appium版本
+        """检查appium版本"""
         if not self.appium_v:
             logger.error('appium 版本有问题')
             exit()
@@ -26,7 +27,7 @@ class Environment(object):
             logger.info('appium version {}'.format(self.appium_v))
 
     def check_devices(self):
-        # 检查设备
+        """检查设备"""
         if not self.devices:
             logger.error('没有设备连接')
             exit()

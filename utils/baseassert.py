@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+# @author: sharly
+
 import urllib.request
 import time
 

@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="919f2c98-7a0a-40c3-ab2b-ac4f803c817a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/baseassert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/basesql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/logger.py" afterDir="false" />
+    <list default="true" id="919f2c98-7a0a-40c3-ab2b-ac4f803c817a" name="Default" comment="add case">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apk/tmall.apk" beforeDir="false" afterPath="$PROJECT_DIR$/apk/dmbrand_v1.1.0.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/homepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/loginpage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/loginpage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/049ff336-3640-44e2-9b53-5052be27e682-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/xml/30f514de-f127-4211-bd03-39b3e309b3d8-testsuite.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/basedriver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcase/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testcase/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/baseassert.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/baseassert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/basepage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/baseutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/baseutil.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/shell.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/shell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/tools.py" afterDir="false" />
     </list>
@@ -35,7 +26,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/appium_auto$logger.coverage" NAME="logger Coverage Results" MODIFIED="1541576865992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/appium_auto$environment.coverage" NAME="environment Coverage Results" MODIFIED="1541580687676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/appium_auto$pytest_for_test_login_TestLogin.coverage" NAME="pytest for test_login.TestLogin Coverage Results" MODIFIED="1541592323183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/appium_auto$pytest_for_test_login_TestLogin.coverage" NAME="pytest for test_login.TestLogin Coverage Results" MODIFIED="1541647756905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/appium_auto$test_login.coverage" NAME="test_login Coverage Results" MODIFIED="1541589678907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/appium_auto$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1541589340225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/appium_auto$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1541592808297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
@@ -45,9 +36,9 @@
     <SUITE FILE_PATH="coverage/appium_auto$basepage.coverage" NAME="basepage Coverage Results" MODIFIED="1541591027320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/appium_auto$basesql.coverage" NAME="basesql Coverage Results" MODIFIED="1541576510537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/appium_auto$appium_001.coverage" NAME="appium_001 Coverage Results" MODIFIED="1536935933905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/appium_auto$run.coverage" NAME="run Coverage Results" MODIFIED="1541578321440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/appium_auto$run.coverage" NAME="run Coverage Results" MODIFIED="1541648818554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/appium_auto$py_test_for_test001_TestSample.coverage" NAME="py.test for test001.TestSample Coverage Results" MODIFIED="1536974509177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/appium_auto$pytest_for_test_login_TestLogin_test_login.coverage" NAME="pytest for test_login.TestLogin.test_login Coverage Results" MODIFIED="1541592190435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/appium_auto$pytest_for_test_login_TestLogin_test_login.coverage" NAME="pytest for test_login.TestLogin.test_login Coverage Results" MODIFIED="1541647066093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/appium_auto$pytest_for_test_login_TestLogin_test_login2.coverage" NAME="pytest for test_login.TestLogin.test_login2 Coverage Results" MODIFIED="1541591797279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/appium_auto$tools.coverage" NAME="tools Coverage Results" MODIFIED="1541575372237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
@@ -58,25 +49,26 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
           <entry key="ini" value="3" />
-          <entry key="log" value="4" />
-          <entry key="py" value="92" />
-          <entry key="yaml" value="9" />
+          <entry key="log" value="7" />
+          <entry key="py" value="140" />
+          <entry key="yaml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Ini" value="3" />
-          <entry key="Log" value="4" />
+          <entry key="Log" value="7" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="92" />
-          <entry key="YAML" value="9" />
+          <entry key="Python" value="140" />
+          <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -84,32 +76,45 @@
           <entry key="dummy" value="3" />
           <entry key="gitignore" value="5" />
           <entry key="ini" value="2" />
-          <entry key="py" value="1776" />
+          <entry key="py" value="2463" />
+          <entry key="txt" value="8" />
           <entry key="yaml" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Ini" value="2" />
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="1776" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="2463" />
           <entry key="YAML" value="82" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/test_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="1034">
+              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1541592972437" expanded="true" signature="397:406" ph="..." />
-                <marker date="1541592972437" expanded="true" signature="515:521" ph="..." />
-                <marker date="1541592972437" expanded="true" signature="542:551" ph="..." />
+                <marker date="1541648358953" expanded="true" signature="495:504" ph="..." />
+                <marker date="1541648358953" expanded="true" signature="613:678" ph="..." />
+                <marker date="1541648358953" expanded="true" signature="699:708" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/basepage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-188">
+              <caret line="100" column="32" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="32" />
+              <folding>
+                <element signature="e#62#76#0" expanded="true" />
+                <marker date="1541663744522" expanded="true" signature="3783:4531" ph="..." />
               </folding>
             </state>
           </provider>
@@ -142,6 +147,9 @@
       <find>code</find>
       <find>click</find>
       <find>tap</find>
+      <find>com.elab.dmbrand:id/riv_avatar</find>
+      <find>locator</find>
+      <find>get_screent_img</find>
     </findStrings>
     <replaceStrings>
       <replace>Log.w</replace>
@@ -164,7 +172,6 @@
         <option value="$PROJECT_DIR$/test001.py" />
         <option value="$PROJECT_DIR$/test_sample.py" />
         <option value="$PROJECT_DIR$/utils/exceptions.py" />
-        <option value="$PROJECT_DIR$/utils/shell.py" />
         <option value="$PROJECT_DIR$/s.py" />
         <option value="$PROJECT_DIR$/pages/template/pages" />
         <option value="$PROJECT_DIR$/pages/__init__.py" />
@@ -177,25 +184,26 @@
         <option value="$PROJECT_DIR$/utils/BasePage.py" />
         <option value="$PROJECT_DIR$/testcase/test.py" />
         <option value="$PROJECT_DIR$/utils/action.py" />
-        <option value="$PROJECT_DIR$/utils/baseutil.py" />
         <option value="$PROJECT_DIR$/utils/log.py" />
-        <option value="$PROJECT_DIR$/utils/config.py" />
-        <option value="$PROJECT_DIR$/utils/tools.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/utils/basesql.py" />
         <option value="$PROJECT_DIR$/config/config.ini" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/utils/baseassert.py" />
-        <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/utils/logger.py" />
-        <option value="$PROJECT_DIR$/utils/environment.py" />
-        <option value="$PROJECT_DIR$/testcase/conftest.py" />
         <option value="$PROJECT_DIR$/config/environment.yaml" />
-        <option value="$PROJECT_DIR$/pages/homepage.py" />
-        <option value="$PROJECT_DIR$/utils/basepage.py" />
-        <option value="$PROJECT_DIR$/pages/loginpage.py" />
         <option value="$PROJECT_DIR$/utils/basedriver.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/pages/homepage.py" />
+        <option value="$PROJECT_DIR$/pages/loginpage.py" />
+        <option value="$PROJECT_DIR$/testcase/conftest.py" />
         <option value="$PROJECT_DIR$/testcase/test_login.py" />
+        <option value="$PROJECT_DIR$/utils/baseassert.py" />
+        <option value="$PROJECT_DIR$/utils/baseutil.py" />
+        <option value="$PROJECT_DIR$/utils/config.py" />
+        <option value="$PROJECT_DIR$/utils/environment.py" />
+        <option value="$PROJECT_DIR$/utils/logger.py" />
+        <option value="$PROJECT_DIR$/utils/shell.py" />
+        <option value="$PROJECT_DIR$/utils/tools.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/utils/basepage.py" />
       </list>
     </option>
   </component>
@@ -216,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,12 +234,12 @@
             <path>
               <item name="appium_auto" type="b2602c69:ProjectViewProjectNode" />
               <item name="appium_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="appium_auto" type="b2602c69:ProjectViewProjectNode" />
               <item name="appium_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="appium_auto" type="b2602c69:ProjectViewProjectNode" />
@@ -248,6 +255,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,8 +286,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_login.py">
-    <configuration name="basepage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.run">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="appium_auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,12 +295,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/basepage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -333,52 +341,16 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_login.TestLogin.test_login2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="appium_auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.TestLogin.test_login2&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_login.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="appium_auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcase/test_login.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for test_login.TestLogin" />
-      <item itemvalue="Python tests.pytest for test_login.TestLogin.test_login2" />
-      <item itemvalue="Python tests.pytest in test_login.py" />
-      <item itemvalue="Python.basepage" />
       <item itemvalue="Python tests.pytest for test_login.TestLogin.test_login" />
+      <item itemvalue="Python tests.pytest for test_login.TestLogin" />
+      <item itemvalue="Python.run" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_login.py" />
+        <item itemvalue="Python.run" />
         <item itemvalue="Python tests.pytest for test_login.TestLogin" />
         <item itemvalue="Python tests.pytest for test_login.TestLogin.test_login" />
-        <item itemvalue="Python tests.pytest for test_login.TestLogin.test_login2" />
-        <item itemvalue="Python.basepage" />
       </list>
     </recent_temporary>
   </component>
@@ -393,18 +365,17 @@
       <option name="presentableId" value="Default" />
       <updated>1536930565777</updated>
     </task>
+    <task id="LOCAL-00001" summary="add case">
+      <created>1541593031079</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541593031079</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_login_TestLogin - 2018.11.07 at 19h 51m 20s.xml">
-      <configuration name="pytest for test_login.TestLogin" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_login_TestLogin - 2018.11.07 at 19h 52m 31s.xml">
-      <configuration name="pytest for test_login.TestLogin" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_login_TestLogin - 2018.11.07 at 19h 54m 23s.xml">
-      <configuration name="pytest for test_login.TestLogin" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_login_TestLogin_test_login2 - 2018.11.07 at 19h 56m 52s.xml">
       <configuration name="pytest for test_login.TestLogin.test_login2" configurationId="tests" />
     </history-entry>
@@ -426,6 +397,15 @@
     <history-entry file="pytest_in_test_login_py - 2018.11.07 at 20h 13m 44s.xml">
       <configuration name="pytest in test_login.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_test_login_TestLogin - 2018.11.08 at 11h 15m 20s.xml">
+      <configuration name="pytest for test_login.TestLogin" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_login_TestLogin_test_login - 2018.11.08 at 11h 18m 03s.xml">
+      <configuration name="pytest for test_login.TestLogin.test_login" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_login_TestLogin - 2018.11.08 at 11h 29m 37s.xml">
+      <configuration name="pytest for test_login.TestLogin" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,21 +418,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21179625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18967828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32765958" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.57304966" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.35177305" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.53758866" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.5517731" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2609929" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32896176" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32765958" />
@@ -492,16 +471,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add case" />
+    <option name="LAST_COMMIT_MESSAGE" value="add case" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/conftest.py" />
-    <entry file="file://$PROJECT_DIR$/test001.py" />
-    <entry file="file://$PROJECT_DIR$/test_sample.py" />
-    <entry file="file://C:/Python37/Lib/site-packages/yaml/__init__.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1055577769/builtins.py" />
-    <entry file="file://C:/Python37/Lib/configparser.py" />
-    <entry file="file://C:/Python37/Lib/site-packages/watchdog/observers/api.py" />
-    <entry file="file://C:/Python37/Lib/site-packages/watchdog/observers/read_directory_changes.py" />
-    <entry file="file://$PROJECT_DIR$/s.py" />
     <entry file="file://$PROJECT_DIR$/pages/pages.py" />
     <entry file="file://$PROJECT_DIR$/pages/template/pages" />
     <entry file="file://$PROJECT_DIR$/pages/yaml/home_page.yaml" />
@@ -525,16 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/shell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="e#43#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -549,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/basesql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -563,58 +520,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/baseassert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding>
-            <element signature="e#43#54#0" expanded="true" />
-            <marker date="1541578309850" expanded="true" signature="80:82" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/2018-11-07_16_28_47.log" />
-    <entry file="file://$PROJECT_DIR$/utils/baseutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/2018-11-07_16_51_07.log" />
     <entry file="file://$PROJECT_DIR$/logs/2018-11-07_16_51_27.log" />
-    <entry file="file://$PROJECT_DIR$/utils/environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/_pytest/fixtures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-934">
@@ -622,27 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/conftest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding>
-            <marker date="1541580863619" expanded="true" signature="91:264" ph="..." />
-            <marker date="1541580863619" expanded="true" signature="316:337" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/2018-11-07_18_51_59.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/2018-11-07_18_51_59.log" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -657,63 +545,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/basepage.py">
+    <entry file="file://$PROJECT_DIR$/config/environment.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="196" column="33" selection-start-line="196" selection-start-column="24" selection-end-line="196" selection-end-column="33" />
-          <folding>
-            <element signature="e#46#60#0" expanded="true" />
-            <marker date="1541592169627" expanded="true" signature="7387:7437" ph="..." />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/allure/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#47#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/appium/webdriver/common/touch_action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1765">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/appium/webdriver/common/multi_action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/selenium/webdriver/common/by.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/selenium/webdriver/common/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/appium/webdriver/common/mobileby.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/2018-11-08_11_17_46.log" />
+    <entry file="file://$PROJECT_DIR$/pages/homepage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/loginpage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding>
-            <marker date="1541592311500" expanded="true" signature="112:318" ph="..." />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/homepage.py">
+    <entry file="file://$PROJECT_DIR$/testcase/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/baseassert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/basedriver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+          <caret selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/basesql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/baseutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#62#73#0" expanded="true" />
+            <element signature="e#43#54#0" expanded="true" />
+            <marker date="1541648451687" expanded="true" signature="89:91" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/shell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1581038676/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37177">
+          <caret line="917" lean-forward="true" selection-start-line="917" selection-end-line="917" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/test_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="1034">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1541592972437" expanded="true" signature="397:406" ph="..." />
-            <marker date="1541592972437" expanded="true" signature="515:521" ph="..." />
-            <marker date="1541592972437" expanded="true" signature="542:551" ph="..." />
+            <marker date="1541648358953" expanded="true" signature="495:504" ph="..." />
+            <marker date="1541648358953" expanded="true" signature="613:678" ph="..." />
+            <marker date="1541648358953" expanded="true" signature="699:708" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/2018-11-08_11_46_59.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/basepage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188">
+          <caret line="100" column="32" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="32" />
+          <folding>
+            <element signature="e#62#76#0" expanded="true" />
+            <marker date="1541663744522" expanded="true" signature="3783:4531" ph="..." />
           </folding>
         </state>
       </provider>

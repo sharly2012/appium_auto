@@ -1,0 +1,53 @@
+{
+  "hosts" : [ {
+    "title" : "DESKTOP-MQJGI8V",
+    "threads" : [ {
+      "title" : "15252-MainThread",
+      "testCases" : [ {
+        "uid" : "c0ad23deb0b23212",
+        "name" : "test_login.TestLogin.test_login",
+        "title" : "Test login",
+        "time" : {
+          "start" : 1541648819359,
+          "stop" : 1541648842248,
+          "duration" : 22889
+        },
+        "severity" : "BLOCKER",
+        "status" : "PASSED"
+      }, {
+        "uid" : "81dc0d9bb6dd7649",
+        "name" : "test_login.TestLogin.test_login2",
+        "title" : "Test login 2",
+        "time" : {
+          "start" : 1541648842255,
+          "stop" : 1541648842260,
+          "duration" : 5
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "1eafbc5ce9da4d09",
+        "name" : "test_login.TestLogin.test_login3",
+        "title" : "Test login 3",
+        "time" : {
+          "start" : 1541648842264,
+          "stop" : 1541648842269,
+          "duration" : 5
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "71bf30fde0622199",
+        "name" : "test_login.TestLogin.test_login4",
+        "title" : "Test login 4",
+        "time" : {
+          "start" : 1541648842273,
+          "stop" : 1541648842276,
+          "duration" : 3
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}

@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+# @author: sharly
+
 import time
-import os
 import logging
 
 

@@ -1,0 +1,64 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1541648819359" stop="1541648842276">
+  <name>testcase</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1541648819359" status="passed" stop="1541648842248">
+      <name>test_login.TestLogin.test_login</name>
+      <attachments>
+        <attachment source="afce782c-c1df-4253-af02-e54f646a00f4-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="story" value="login"/>
+        <label name="severity" value="blocker"/>
+        <label name="feature" value="首页"/>
+        <label name="thread" value="15252-MainThread"/>
+        <label name="host" value="DESKTOP-MQJGI8V"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1541648842255" status="passed" stop="1541648842260">
+      <name>test_login.TestLogin.test_login2</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="test"/>
+        <label name="severity" value="normal"/>
+        <label name="feature" value="首页"/>
+        <label name="thread" value="15252-MainThread"/>
+        <label name="host" value="DESKTOP-MQJGI8V"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1541648842264" status="passed" stop="1541648842269">
+      <name>test_login.TestLogin.test_login3</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="test"/>
+        <label name="severity" value="normal"/>
+        <label name="feature" value="首页"/>
+        <label name="thread" value="15252-MainThread"/>
+        <label name="host" value="DESKTOP-MQJGI8V"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1541648842273" status="passed" stop="1541648842276">
+      <name>test_login.TestLogin.test_login4</name>
+      <attachments/>
+      <labels>
+        <label name="story" value="test"/>
+        <label name="severity" value="normal"/>
+        <label name="feature" value="首页"/>
+        <label name="thread" value="15252-MainThread"/>
+        <label name="host" value="DESKTOP-MQJGI8V"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
