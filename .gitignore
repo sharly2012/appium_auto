@@ -1,4 +1,5 @@
 ##ignore this file##
+.idea
 *.pyc
 /config/config.ini
 /config/environment.yaml
@@ -13,3 +14,4 @@
 /screenshots/*.png
 /screenshots/*.jpg
 /testcase/.pytest_cache
+/report/html/*
