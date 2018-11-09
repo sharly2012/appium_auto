@@ -30,7 +30,8 @@ class TestLogin:
     def teardown_method(self):
         pass
 
-    @allure.severity('blocker')
+    @pytest.allure.severity(pytest.allure.severity_level.NORMAL)
+    @allure.feature("Home Page")
     @allure.story("login")
     def test_login(self):
         homepage = HomePage(self.driver)
@@ -39,17 +40,17 @@ class TestLogin:
         login_page.click(login_page.login_image)
         login_page.tap(login_page.login_immediately)
 
-    @allure.severity('normal')
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
     @allure.story("test")
     def test_login2(self):
         pass
 
-    @allure.severity('normal')
+    @pytest.allure.severity(pytest.allure.severity_level.MINOR)
     @allure.story("test")
     def test_login3(self):
         pass
 
-    @allure.severity('normal')
+    @pytest.allure.severity(pytest.allure.severity_level.NORMAL)
     @allure.story("test")
     def test_login4(self):
         pass

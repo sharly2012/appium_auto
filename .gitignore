@@ -1,11 +1,9 @@
 ##ignore this file##
-.idea
-*.pyc
+/*.pyc
 /config/config.ini
 /config/environment.yaml
 /logs/*.log
 /.idea/
-/testcases/geckodriver.log
 /report/*.html
 /testcase/__pycache__/
 /pages/__pycache__/
@@ -14,4 +12,5 @@
 /screenshots/*.png
 /screenshots/*.jpg
 /testcase/.pytest_cache
-/report/html/*
+/report/html/
+/testcase/.pytest_cache/

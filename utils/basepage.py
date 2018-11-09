@@ -9,6 +9,7 @@ from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import *
 from utils.logger import Logger
+from utils.baseutil import BaseUtil
 
 logger = Logger(logger='BasePage').get_log()
 
@@ -137,6 +138,7 @@ class BasePage(object):
 
     def swipe_up(self, duration=1000):
         """屏幕向上滑动"""
+        logger.info("slide up the screen")
         size = self.get_screen_size()
         x1 = int(size[0] * 0.5)
         y1 = int(size[1] * 0.75)
@@ -145,6 +147,7 @@ class BasePage(object):
 
     def swipe_left(self, duration=1000):
         """屏幕向左滑动"""
+        logger.info("slide left the screen")
         size = self.get_screen_size()
         x1 = int(size[0] * 0.75)
         y1 = int(size[1] * 0.5)
@@ -153,6 +156,7 @@ class BasePage(object):
 
     def swipe_down(self, duration=1000):
         """屏幕向下滑动"""
+        logger.info("slide down the screen")
         size = self.get_screen_size()
         x1 = int(size[0] * 0.5)
         y1 = int(size[1] * 0.25)
@@ -161,6 +165,7 @@ class BasePage(object):
 
     def swipe_right(self, duration=1000):
         """屏幕向右滑动"""
+        logger.info("slide right the screen")
         size = self.get_screen_size()
         x1 = int(size[0] * 0.05)
         y1 = int(size[1] * 0.5)
@@ -169,53 +174,68 @@ class BasePage(object):
 
     def click_back(self):
         """点击系统返回键KEYCODE_BACK = 4"""
+        logger.info("click the back button")
         self.driver.press_keycode(4)
 
     def click_home(self):
         """点击系统返回键KEYCODE_HOME = 3"""
+        logger.info("click the home button")
         self.driver.press_keycode(3)
 
     def click_power(self):
-        """点击系统返回键KEYCODE_POWER = 26"""
+        """点击系统电源KEYCODE_POWER = 26"""
+        logger.info("click the power button")
         self.driver.press_keycode(26)
 
     def is_displayed(self, locator):
         """判断元素是否在当前页面显示"""
-        element = self.find_element(*locator)
-        return element.is_displayed()
+        try:
+            element = self.find_element(*locator)
+            return element.is_displayed()
+        except NoSuchElementException as e:
+            logger.info("Not exist this element %s" % e)
 
     def is_exist_current(self, text):
         """通过获取所有元素来判断当前text是否存在"""
         all_element = self.driver.page_source
-        return text in all_element
+        if text in all_element:
+            return True
+        else:
+            logger.info("Current page not exist %s" % text)
+            return False
 
     def long_press(self, locator, duration=3000):
         """长按"""
+        logger.info("long press % s" % locator)
         element = self.find_element(*locator)
         touch_action = TouchAction(self.driver)
         touch_action.long_press(element, duration).perform()
 
     def hide_keyboard(self):
         """隐藏软键盘"""
+        logger.info("hide the keyboard")
         self.driver.hide_keyboard()
 
     def get_screen_shot(self, case_name):
         """截图"""
-        file_name = self.format_screen_shot_time() + '_' + case_name
-        file_path = '../android_project/screenshot/%s.png' % file_name
+        file_name = self.get_current_time() + '_' + case_name
+        file_path = BaseUtil().get_root_path() + '/screenshots/%s.png' % file_name
         self.driver.get_screenshot_as_file(file_path)
         return file_path
 
     def launch_app(self):
         """启动app"""
+        logger.info("launch the app")
         self.driver.launch_app()
 
     def close_app(self):
         """关闭app"""
+        logger.info("close the app")
         self.driver.close_app()
 
     def quit(self):
         """退出driver"""
+        logger.info("quit the driver")
         self.driver.quit()
 
     def assert_in(self, text):
@@ -278,7 +298,7 @@ class BasePage(object):
             return False
 
     @staticmethod
-    def format_screen_shot_time():
-        """格式化屏幕截图时间，用于文件名"""
+    def get_current_time():
+        """获取当前时间"""
         temp = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
         return temp

@@ -1,0 +1,3 @@
+basepage.py                116 INFO     tap positions [(86, 107), (115, 115)]
+basepage.py                 88 INFO     Click element by id: com.elab.dmbrand:id/riv_avatar...
+basepage.py                116 INFO     tap positions [(281, 1199), (799, 1326)]
