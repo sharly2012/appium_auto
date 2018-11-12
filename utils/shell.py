@@ -8,23 +8,24 @@ import subprocess
 
 class Shell:
     @staticmethod
-    def invoke(cmd):
+    def invoke(cmd_command):
         """通过shell来执行"""
-        output, errors = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
+        output, errors = subprocess.Popen(cmd_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
         o = output.decode("utf-8")
         return o
 
 
-# 检查ANDROID环境变量
-if "ANDROID_HOME" in os.environ:
-    command = os.path.join(
-        os.environ["ANDROID_HOME"],
-        "platform-tools",
-        "adb")
-else:
-    raise EnvironmentError(
-        "Adb not found in $ANDROID_HOME path: %s." %
-        os.environ["ANDROID_HOME"])
+class AndroidEnvironment:
+    """检查ANDROID环境变量"""
+    if "ANDROID_HOME" in os.environ:
+        command = os.path.join(
+            os.environ["ANDROID_HOME"],
+            "platform-tools",
+            "adb")
+    else:
+        raise EnvironmentError(
+            "Adb not found in $ANDROID_HOME path: %s." %
+            os.environ["ANDROID_HOME"])
 
 
 class ADB(object):
@@ -40,11 +41,11 @@ class ADB(object):
             self.device_id = "-s %s" % device_id
 
     def adb(self, args):
-        cmd = "%s %s %s" % (command, self.device_id, str(args))
+        cmd = "%s %s %s" % (AndroidEnvironment.command, self.device_id, str(args))
         return Shell.invoke(cmd)
 
     def shell(self, args):
-        cmd = "%s %s shell %s" % (command, self.device_id, str(args),)
+        cmd = "%s %s shell %s" % (AndroidEnvironment.command, self.device_id, str(args),)
         return Shell.invoke(cmd)
 
     def get_device_state(self):
@@ -71,3 +72,8 @@ class ADB(object):
         获取设备SDK版本号
         """
         return self.shell("getprop ro.build.version.sdk").strip()
+
+
+if __name__ == '__main__':
+    android_env = AndroidEnvironment
+    print(android_env.command)

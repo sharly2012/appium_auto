@@ -8,7 +8,7 @@
 /testcase/__pycache__/
 /pages/__pycache__/
 /report/__pycache__/
-/util/__pycache__/
+/utils/__pycache__/
 /screenshots/*.png
 /screenshots/*.jpg
 /testcase/.pytest_cache
