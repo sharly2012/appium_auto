@@ -14,3 +14,4 @@
 /testcase/.pytest_cache
 /report/html/
 /testcase/.pytest_cache/
+/__pycache__/
