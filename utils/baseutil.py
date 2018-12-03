@@ -4,6 +4,8 @@
 
 import configparser
 import yaml
+import pytesseract
+from PIL import Image
 
 
 class BaseUtil:
@@ -29,3 +31,4 @@ class BaseUtil:
 
     def get_root_path(self):
         return self.root_path
+   

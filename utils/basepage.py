@@ -104,8 +104,7 @@ class BasePage(object):
     def input_text(self, locator, text):
         """在文本框输入文本"""
         self.find_element(*locator).clear()
-        logger.info('Input element by %s: %s...' % (locator[0], locator[1]))
-        logger.info('Input: %s' % text)
+        logger.info('Input element %s value %s ...' % (locator, text))
         try:
             self.find_element(*locator).send_keys(text)
         except Exception as e:

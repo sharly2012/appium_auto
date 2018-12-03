@@ -15,3 +15,7 @@ class LoginPage(BasePage):
     visit_history = (By.XPATH, "//*[@text='浏览历史'")
     person_setting = (By.XPATH, "//*[@text='个人设置'")
     login_immediately = [(281, 1199), (799, 1326)]
+    login_mobile = (By.ID, "com.elab.dmbrand:id/txt_login_no")
+    verify_code = (By.ID, "com.elab.dmbrand:id/txt_login_pwd")
+    login_button = (By.ID, "com.elab.dmbrand:id/tv_enter_up")
+

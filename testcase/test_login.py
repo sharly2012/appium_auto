@@ -8,11 +8,12 @@ from utils.basedriver import BaseDriver
 from utils.logger import Logger
 from pages.homepage import HomePage
 from pages.loginpage import LoginPage
+from pages.personsetting import PersonSetting
 
 logger = Logger(logger="TestLogin").get_log()
 
 
-@allure.feature("首页")
+@allure.feature("Login Test")
 class TestLogin:
 
     @classmethod
@@ -30,29 +31,43 @@ class TestLogin:
     def teardown_method(self):
         pass
 
-    @pytest.allure.severity(pytest.allure.severity_level.NORMAL)
-    @allure.feature("Home Page")
+    @allure.severity(pytest.allure.severity_level.NORMAL)
     @allure.story("login")
+    @allure.testcase("Login test pass")
     def test_login(self):
         homepage = HomePage(self.driver)
+        homepage.click(homepage.update_cancel)
         homepage.tap(homepage.login_icon)
         login_page = LoginPage(self.driver)
         login_page.click(login_page.login_image)
         login_page.tap(login_page.login_immediately)
+        login_page.clear_input(login_page.login_mobile)
+        login_page.input_text(login_page.login_mobile, "15601791033")
+        login_page.clear_input(login_page.verify_code)
+        login_page.input_text(login_page.verify_code, "150723")
+        login_page.click(login_page.login_button)
+        personsetting = PersonSetting(self.driver)
+        # mobile = personsetting.get_element_text(personsetting.mobile)
+        # assert mobile == "15601791033"
 
-    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
-    @allure.story("test")
-    def test_login2(self):
+        logger.info("Login success")
+
+    @allure.severity(pytest.allure.severity_level.BLOCKER)
+    @allure.story("login")
+    @allure.testcase("Login test fail")
+    def test_login002(self):
         pass
 
-    @pytest.allure.severity(pytest.allure.severity_level.MINOR)
-    @allure.story("test")
-    def test_login3(self):
+    @allure.severity(pytest.allure.severity_level.MINOR)
+    @allure.story("login")
+    @allure.testcase("Login test 001")
+    def test_login003(self):
         pass
 
-    @pytest.allure.severity(pytest.allure.severity_level.NORMAL)
-    @allure.story("test")
-    def test_login4(self):
+    @allure.severity(pytest.allure.severity_level.NORMAL)
+    @allure.story("login")
+    @allure.testcase("Login test 002")
+    def test_login004(self):
         pass
 
 
