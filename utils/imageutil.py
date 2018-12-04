@@ -2,11 +2,15 @@ import cv2
 import pytesseract
 from PIL import Image
 from utils.logger import Logger
+from utils.baseutil import BaseUtil
 
 logger = Logger(logger="ImageUtil").get_log()
 
 
-class ImageUtil:
+class ImageUtil(object):
+
+    def __init__(self):
+        self.path = BaseUtil().get_root_path()
 
     def _get_dynamic_binary_image(self, file_dir, file_name):
         filename = self.path + '/out_img/' + file_name.split('.')[0] + '-binary.jpg'
@@ -160,18 +164,17 @@ class ImageUtil:
 
     def image_to_string(self, locator):
         # 截取当前网页，该网页有我们需要的验证码
-        self.driver.save_screenshot(self.root_path + "/screenshots/" + "All.png")
+        self.driver.save_screenshot(self.root_path + "/screenshots/" + "first.png")
         img_element = self.find_element(*locator)
         # 获取验证码x,y轴坐标
         location = img_element.location
         # 获取验证码的长宽
         size = img_element.size
-        rangle = (int(location['x']), int(location['y']), int(location['x'] + size['width']),
-                  # 写成我们需要截取的位置坐标
-                  int(location['y'] + size['height']))
-        i = Image.open(self.root_path + "/screenshots/" + "All.png")
+        rangles = (int(location['x']), int(location['y']), int(location['x']
+                                                               + size['width']), int(location['y'] + size['height']))
+        i = Image.open(self.root_path + "/screenshots/" + "first.png")
         # 使用Image的crop函数，从截图中再次截取我们需要的区域
-        result = i.crop(rangle)
+        result = i.crop(rangles)
         result.save(self.path + "/screenshots/" + "result.png")
         rgb_im = result.convert('RGB')
         rgb_im.save(self.root_path + "/screenshots/" + "result.jpg")

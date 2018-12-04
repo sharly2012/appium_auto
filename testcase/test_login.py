@@ -32,7 +32,7 @@ class TestLogin:
         pass
 
     @allure.severity(pytest.allure.severity_level.NORMAL)
-    @allure.story("login")
+    @allure.story("login success")
     @allure.testcase("Login test pass")
     def test_login(self):
         homepage = HomePage(self.driver)
@@ -53,20 +53,20 @@ class TestLogin:
         logger.info("Login success")
 
     @allure.severity(pytest.allure.severity_level.BLOCKER)
-    @allure.story("login")
+    @allure.story("login success")
     @allure.testcase("Login test fail")
     def test_login002(self):
         pass
 
     @allure.severity(pytest.allure.severity_level.MINOR)
-    @allure.story("login")
-    @allure.testcase("Login test 001")
+    @allure.story("login fail")
+    @allure.testcase("Login test 003")
     def test_login003(self):
         pass
 
     @allure.severity(pytest.allure.severity_level.NORMAL)
-    @allure.story("login")
-    @allure.testcase("Login test 002")
+    @allure.story("login fail")
+    @allure.testcase("Login test 004")
     def test_login004(self):
         pass
 
