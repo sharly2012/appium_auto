@@ -7,17 +7,14 @@ import logging
 
 
 class Logger(object):
-    def __init__(self, logger):
-        """
-        将日志保存到指定的路径文件中
-        指定日志的级别，以及调用文件
-        """
+    """Saves the log to the specified path file and Specifies the level"""
 
-        # create logger files
+    def __init__(self, logger):
+        """create logger files"""
         self.logger = logging.getLogger(logger)
         self.logger.setLevel(logging.DEBUG)
 
-        # create handle to write the log
+        """create handle to write the log"""
         now = time.strftime("%Y-%m-%d_%H_%M_%S")
         log_path = "E:/PycharmProjects/appium_auto/logs/"
         log_name = log_path + now + '.log'
@@ -25,7 +22,7 @@ class Logger(object):
         file_handle = logging.FileHandler(log_name, encoding="utf-8")
         file_handle.setLevel(logging.INFO)
 
-        # create a handle to output the log to console
+        """create a handle to output the log to console"""
         control_handle = logging.StreamHandler()
         control_handle.setLevel(logging.INFO)
 
@@ -34,7 +31,7 @@ class Logger(object):
         file_handle.setFormatter(formatter)
         control_handle.setFormatter(formatter)
 
-        # add handle to log
+        """add handle to log"""
         self.logger.addHandler(file_handle)
         self.logger.addHandler(control_handle)
 

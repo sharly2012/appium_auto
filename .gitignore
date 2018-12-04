@@ -5,6 +5,8 @@
 /logs/*.log
 /.idea/
 /report/*.html
+/report/html/
+/report/xml/
 /testcase/__pycache__/
 /pages/__pycache__/
 /report/__pycache__/

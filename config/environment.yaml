@@ -1,9 +1,9 @@
 EnvironmentInfo:
   platformName: Android
   platformVersion: 8.0.0
-  deviceName: b7556c74
+  deviceName: emulator-5554
   browserName: chrome
-  apk: E:/PycharmProjects/appium_auto/apk/dmbrand_v1.0.0.apk
+  app: E:/PycharmProjects/appium_auto/apk/dmbrand_v1.0.0.apk
   appPackage: com.elab.dmbrand
   appActivity: com.elab.dmbrand.splash.SplashActivity
   appium: 1.9.1
