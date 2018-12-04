@@ -84,7 +84,7 @@ class BasePage(object):
 
     def click(self, locator):
         """click"""
-        logger.info('Click element by %s ...' % locator)
+        logger.info('Click element by %s: %s ...' % (locator[0], locator[1]))
         try:
             self.find_element(*locator).click()
         except AttributeError as e:
@@ -95,20 +95,18 @@ class BasePage(object):
         element = self.find_element(*locator)
         try:
             element.clear()
-            logger.info('Clear input-box: %s ...' % locator)
+            logger.info('Clear input-box by %s: %s ...' % (locator[0], locator[1]))
         except NameError as ne:
             logger.warning("Failed to clear in input box with %s" % ne)
-            self.get_screent_img()
 
     def send_keys(self, locator, text):
         """send keys"""
         self.find_element(*locator).clear()
-        logger.info('Input element %s value %s ...' % (locator, text))
+        logger.info('Input element by %s : %s values %s ...' % (locator[0], locator[1], text))
         try:
             self.find_element(*locator).send_keys(text)
         except Exception as e:
             logger.error("Failed to type in input box with %s" % e)
-            self.get_screent_img()
 
     def tap(self, positions, timeout=500):
         """tap element"""
