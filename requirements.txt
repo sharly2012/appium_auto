@@ -45,7 +45,7 @@ pyquery==1.4.0
 pytesseract==0.2.5
 pytest==3.9.2
 pytest-allure-adaptor==1.7.10
-PyYAML==3.13
+PyYAML==5.4
 pyzmq==17.1.2
 query-string==1.0.2
 request==1.0.2
